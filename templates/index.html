@@ -3,9 +3,22 @@
 {% block title %}Home - Gaming Hub{% endblock %}
 
 {% block content %}
-<main>
-    <h1>Welcome to Gaming Hub</h1>
-    <p>Your ultimate destination for all things gaming. Explore, discover, and engage with the gaming world.</p>
-</main>
+<main class="main-content">
+    <h1>Welcome to the Gaming Hub</h1>
+    <p class="intro-text">Welcome to your ultimate gaming sanctuary! The Gaming Hub is designed to be your go-to
+        destination for diving deep into the heart of gaming culture. Whether you're a retro enthusiast, a fan of the
+        latest releases, or somewhere in between, you've found your haven.</p>
+    <div class="section flex-container">
+        <img src="{{ url_for('static', filename='images/thewitcher3.webp') }}" alt="The Witcher 3" height="200px">
+        <div class="text-content">
+            <h2>Discover Your Next Adventure</h2>
+            <p>Explore our vast collection spanning several eras of video games. From the pixelated classics of the '80s
+                to the immersive experiences of the current generation, every gamer finds a treasure trove here. Our <a
+                    href="genres.html">Genres &amp; Games</a> page categorizes each game meticulously, ensuring you find
+                your next obsession with ease.</p>
+        </div>
+        <img src="{{ url_for('static', filename='images/zelda1.jpg') }}" alt="zelda game" height="200px" width="275px">
+    </div>
 
+</main>
 {% endblock %}
