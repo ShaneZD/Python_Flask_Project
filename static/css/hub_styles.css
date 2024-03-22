@@ -12,82 +12,128 @@
 }
 
 body {
-    font-family: 'Press Start 2P', cursive;
-    background-color: rgb(255, 255, 255); 
-    color: #F2AA4CFF; 
+    font-family: "Press Start 2P", cursive;
+    background-color: rgb(255, 255, 255);
+    color: #f2aa4cff;
     margin: 0;
     padding: 0;
-}
-
-body.dark-mode {
+  }
+  
+  body.dark-mode {
     background-color: #121212;
     color: #ffffff;
-}
-
-
-header {
-    background-color: #0063B2FF;
-    color: #F2AA4CFF;
+  }
+  
+  header {
+    background-color: #0063b2ff;
+    color: #f2aa4cff;
     padding: 20px;
     text-align: center;
-}
-
-nav {
+  }
+  
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; 
-}
-
-nav ul {
+    padding: 0 20px;
+  }
+  
+  nav ul {
     list-style-type: none;
-    display: flex; 
-    margin: 0; 
-    padding: 0; 
-}
-
-nav ul li {
-    margin-right: 20px; 
-}
-
-nav ul li:last-child {
-    margin-right: 0; 
-}
-
-nav ul li a {
-    color: #F2AA4CFF; 
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #f2aa4cff;
     text-decoration: none;
-    padding: 10px; 
-}
-
-.theme-toggle-container {
-    margin-left: auto; 
-}
-
-.theme-toggle-container button {
-    background-color: #0063B2FF; 
-    color: #F2AA4CFF;
+    padding: 10px;
+  }
+  
+  .theme-toggle-container {
+    margin-left: auto;
+  }
+  
+  .theme-toggle-container button {
+    background-color: #0063b2ff;
+    color: #f2aa4cff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    font-family: 'Press Start 2P', cursive; 
-    border-radius: 5px; 
-}
-.theme-toggle-container button:hover {
-    background-color: #004a88; 
-}
-
-footer {
-    background-color: #0063B2FF;
-    color: #F2AA4CFF;
+    font-family: "Press Start 2P", cursive;
+    border-radius: 5px;
+  }
+  .theme-toggle-container button:hover {
+    background-color: #004a88;
+  }
+  
+  footer {
+    background-color: #0063b2ff;
+    color: #f2aa4cff;
     text-align: center;
     padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-.text-content {
+  }
+  .text-content {
     border-style: groove;
-    border-color: #0063B2FF;
+    border-color: #f1ba0f;
     font-size: x-large;
-}
+  }
+  
+  .image-container {
+    position: relative;
+    width: 275px;
+    overflow: hidden;
+  }
+  
+  .side-image {
+    width: 100%;
+    transition: transform 0.5s ease;
+  }
+  
+  .image-container:hover .side-image {
+    transform: scale(1.1);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  
+  .image-container:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .text {
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+  }
+  
+  .image-container:hover .text {
+    transform: translateY(0);
+  }
