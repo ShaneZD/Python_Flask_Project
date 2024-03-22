@@ -86,3 +86,8 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.text-content {
+    border-style: groove;
+    border-color: #0063B2FF;
+    font-size: x-large;
+}
