@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Shop{% endblock %}
+
+{% block content %}
+<div class="genres-grid">
+    {% for item in inventory %}
+    <div class="genre-item">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename=item.image_url) }}" class="side-image" alt="{{ item.name }}">
+            <div class="overlay">
+                <div class="text">{{ item.name }} - ${{ item.price }} - Stock: {{ item.stock }}</div>
+            </div>
+        </div>
+        <div class="genre-description">
+            <h3>{{ item.name }}</h3>
+            <p>Price: €{{ item.price }}</p>
+            <p>Stock: {{ item.stock }}</p>
+            <a href="/buy/{{ item.id }}" class="btn">Buy Now</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
