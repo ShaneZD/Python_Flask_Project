@@ -137,3 +137,23 @@ body {
   .image-container:hover .text {
     transform: translateY(0);
   }
+  .genres-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.genre-item {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.genre-description {
+    padding: 15px;
+}
+
+.genre-description h3 {
+    margin-top: 0;
+}
