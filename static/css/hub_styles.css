@@ -157,3 +157,35 @@ body {
 .genre-description h3 {
     margin-top: 0;
 }
+@media (max-width: 1024px) {
+
+    .genres-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+   
+    .genres-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .genre-description h3 {
+        font-size: 1.2em; 
+    }
+}
+
+@media (max-width: 480px) {
+   
+    .genres-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .genre-description {
+        padding: 10px; 
+    }
+
+    .genre-description h3 {
+        font-size: 1.1em; 
+    }
+}
