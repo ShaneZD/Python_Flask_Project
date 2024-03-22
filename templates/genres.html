@@ -3,8 +3,53 @@
 {% block title %}Genres - Gaming Hub{% endblock %}
 
 {% block content %}
-<main>
-    <h1>Game Genres</h1>
-    <p>From RPGs to Action Adventures, explore games by genre.</p>
-</main>
+<div class="genres-grid">
+    <div class="genre-item" style="background-image: url({{ url_for('static', filename='images/genre1.jpg') }});">
+    </div>
+    <div class="genre-description">
+        <h3>MMORPG Games!</h3>
+        <p>MMORPGs, or Massively Multiplayer Online Role-Playing Games, are a genre of video games that blend the vast,
+            persistent worlds of role-playing games (RPGs) with the social and interactive elements of online
+            multiplayer platforms. These games enable hundreds or even thousands of players to interact within the same
+            world simultaneously, offering an unparalleled sense of scale and community. MMORPGs are known for their
+            deep gameplay, complex economies, and immersive environments that evolve over time, often in response to the
+            actions of the community.</p>
+    </div>
+
+    <div class="genre-item" style="background-image: url({{ url_for('static', filename='images/genre2.avif') }});">
+    </div>
+    <div class="genre-description">
+        <h3>RPG Games!</h3>
+        <p>Role-Playing Games (RPGs) are a broad genre of video games characterized by their emphasis on storytelling,
+            character development, and exploration. Players assume the roles of characters in fictional settings,
+            navigating through stories that involve quests, challenges, and interactions with other characters. The
+            depth of the story and the complexity of the character development process set RPGs apart from other genres.
+        </p>
+    </div>
+
+    <div class="genre-item" style="background-image: url({{ url_for('static', filename='images/genre3.jpg') }});">
+
+    </div>
+    <div class="genre-description">
+        <h3>Strategy Games!</h3>
+        <p>Strategy games are a genre of video games that emphasize skillful thinking and planning to achieve victory.
+            Unlike many other video game genres, which may rely heavily on speed, reflexes, or narrative, strategy games
+            challenge the player's decision-making abilities, offering a blend of tactical depth, strategic planning,
+            and resource management. Players often have to anticipate their opponent's moves, plan long-term strategies,
+            and make decisions that can have far-reaching consequences.</p>
+    </div>
+
+    <div class="genre-item" style="background-image: url({{ url_for('static', filename='images/genre4.jpeg') }});">
+    </div>
+    <div class="genre-description">
+        <h3>Platform Games!</h3>
+        <p>Platform games, also known as platformers, are a genre of video games and a cornerstone of the gaming
+            industry. These games focus on guiding a character or avatar to jump between suspended platforms or over
+            obstacles to advance the level. The defining mechanics of platform games are the player's ability to jump,
+            climb, and sometimes swim or fly, or navigating through a structured environment.
+
+        </p>
+    </div>
+</div>
+
 {% endblock %}
