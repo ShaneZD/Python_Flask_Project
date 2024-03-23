@@ -48,6 +48,10 @@ def about():
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':
+        name = request.form['name']
+        email = request.form['email']
+        message = request.form['message']
+        print({"name": name, "email": email, "message": message})  
         return "Thank you for your message!"
     return render_template('contact.html')
 
