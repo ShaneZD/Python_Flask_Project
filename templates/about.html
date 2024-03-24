@@ -1,46 +1,67 @@
 {% extends "base.html" %}
 
 {% block title %}About Us - Gaming Hub{% endblock %}
-
 {% block content %}
+<header class="header">About</header>
 <main class="main-content">
     <div class="text-content-grid">
-        <div class="text-box">
+
+        <div class="text-box" onclick="revealText(this)">
             <div class="summary">The Journey</div>
-            <div class="full-text">Detaile</div>
+            <div class="full-text">The idea for this site came from me wanting to have an all-in-one online hub for all
+                gamers alike to discuss games of all types, learn about games of all types, and collect merch of all
+                types!</div>
         </div>
-        <div class="text-box">
+
+        <div class="text-box" onclick="revealText(this)">
             <div class="summary">The Passion</div>
-            <div class="full-text">Detail</div>
+            <div class="full-text">I have had a passion for gaming since i was very young, through the loss of my mother
+                i found an outlet by finding different worlds escape my own.</div>
         </div>
-        <div class="text-box">
-            <div class="summary">Who am I?</div>
-            <div class="full-text">Detail</div>
+
+        <div class="text-box" onclick="revealText(this)">
+            <div class="summary">Who Am I?</div>
+            <div class="full-text">My name is Shane, and i have had a passion for gaming since before i could walk,
+                starting with a Sega..the first game i ever played was the original 1989 'Golden Axe'.</div>
         </div>
-        <div class="text-box">
-            <div class="summary">My Favourite games</div>
-            <div class="full-text">Detail</div>
+
+        <div class="text-box" onclick="revealText(this)">
+            <div class="summary">Favourite Games</div>
+            <div class="full-text">My favourite games of all time are: Final Fantasy X, Runescape, Elden Ring, Age Of
+                Empires, mentioned in the next 4 boxes.</div>
         </div>
-        <div class="text-box">
-            <div class="summary">Game 1</div>
-            <div class="full-text">Detail</div>
+
+        <div class="text-box" onclick="revealText(this)">
+            <div class="summary">Final Fantasy X</div>
+            <div class="full-text">Set in the fantastical world of Spira, it follows the journey of Tidus, a young
+                athlete mysteriously transported to Spira from his world, and Yuna, a summoner on a quest to vanquish
+                the malevolent entity known as Sin. </div>
         </div>
-        <div class="text-box">
-            <div class="summary">Game 2</div>
-            <div class="full-text">Detail</div>
+
+        <div class="text-box" onclick="revealText(this)">
+            <div class="summary">Runescape</div>
+            <div class="full-text">Set in the medieval fantasy realm of Gielinor, a world divided into different
+                kingdoms, regions, and cities, players can travel throughout Gielinor via a number of methods including
+                on foot, magical spells, or charter ships.</div>
         </div>
-        <div class="text-box">
-            <div class="summary">Future</div>
-            <div class="full-text">Detail</div>
+
+        <div class="text-box" onclick="revealText(this)">
+            <div class="summary">Elden Ring</div>
+            <div class="full-text">Set in the Lands Between, governed by the Ring and its demigod offspring, players
+                assume the role of the Tarnished, called back after being exiled, on a quest to find all the Great
+                Runes, restore the Elden Ring, and become the Elden Lord.</div>
         </div>
-        <div class="text-box">
-            <div class="summary">Summary</div>
-            <div class="full-text">Detail</div>
+
+        <div class="text-box" onclick="revealText(this)">
+            <div class="summary">Age of Empires</div>
+            <div class="full-text">Players are tasked with guiding a civilization from a small tribe to a dominant
+                global empire across different historical periods, making strategic decisions in managing resources,
+                technological development, and military campaigns against other civilizations.</div>
         </div>
     </div>
 </main>
 <div id="hero-slider" class="slider">
-    <img src="/static/images/gaming.jpg" alt="Gaming Event" height="200px" width="55%">
-    <img src="/static/images/gaming2.jpg" alt="Community" height="200px" width="55%">
+    <img src="/static/images/gaming.jpg" alt="Gaming Event" height="260px" width="55%">
+    <img src="/static/images/gaming5.webp" alt="Community" height="260px" width="55%">
 </div>
 {% endblock %}
