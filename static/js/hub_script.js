@@ -7,7 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 window.addEventListener("DOMContentLoaded", (event) => {
   let sliderIndex = 0;
-  const slides = document.querySelectorAll("#hero-slider img, #hero-slider2 img");
+  const slides = document.querySelectorAll(
+    "#hero-slider img, #hero-slider2 img"
+  );
   const nextSlide = () => {
     slides[sliderIndex].style.display = "none";
     sliderIndex = (sliderIndex + 1) % slides.length;
@@ -20,14 +22,23 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 function revealText(element) {
-    var fullText = element.querySelector('.full-text');
-    var summary = element.querySelector('.summary');
-    if (fullText.style.display === "block") {
-      fullText.style.display = "none";
-      summary.style.opacity = 1;
-    } else {
-      fullText.style.display = "block";
-      summary.style.opacity = 0;
-    }
+  var fullText = element.querySelector(".full-text");
+  var summary = element.querySelector(".summary");
+  if (fullText.style.display === "block") {
+    fullText.style.display = "none";
+    summary.style.opacity = 1;
+  } else {
+    fullText.style.display = "block";
+    summary.style.opacity = 0;
   }
-  
+}
+document.querySelectorAll('input[type="email"]').forEach((input) => {
+  input.addEventListener("input", () => {
+    if (input.validity.typeMismatch) {
+      input.setCustomValidity("No fakes!");
+      input.reportValidity();
+    } else {
+      input.setCustomValidity("");
+    }
+  });
+});
