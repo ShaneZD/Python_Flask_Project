@@ -1,6 +1,33 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const toggleButton = document.getElementById('theme-toggle');
-    toggleButton.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-    });
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("theme-toggle");
+  toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
 });
+
+window.addEventListener("DOMContentLoaded", (event) => {
+  let sliderIndex = 0;
+  const slides = document.querySelectorAll("#hero-slider img, #hero-slider2 img");
+  const nextSlide = () => {
+    slides[sliderIndex].style.display = "none";
+    sliderIndex = (sliderIndex + 1) % slides.length;
+    slides[sliderIndex].style.display = "block";
+  };
+  slides.forEach((slide, index) => {
+    slide.style.display = index === 0 ? "block" : "none";
+  });
+  setInterval(nextSlide, 5000);
+});
+
+function revealText(element) {
+    var fullText = element.querySelector('.full-text');
+    var summary = element.querySelector('.summary');
+    if (fullText.style.display === "block") {
+      fullText.style.display = "none";
+      summary.style.opacity = 1;
+    } else {
+      fullText.style.display = "block";
+      summary.style.opacity = 0;
+    }
+  }
+  
