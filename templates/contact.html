@@ -3,8 +3,8 @@
 {% block title %}Contact Us{% endblock %}
 
 {% block content %}
+<header class="header">Contact Us</header>
 <main>
-    <h1>Contact Us</h1>
     <form action="/contact" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
@@ -14,5 +14,24 @@
         <textarea id="message" name="message" required></textarea><br><br>
         <input type="submit" value="Send">
     </form>
+    <div class="text-content-grid1">
+        <div class="text-box1" tabindex="0">
+            <div class="summary1">Be Part of Our Quest!
+                Join our vibrant community of gamers and creators today and take your gaming experience to new heights!
+                Whether you're a casual player, a hardcore competitor, or a creative modder, there's a place for you in
+                our ranks.</div>
+
+        </div>
+        <div class="text-box1" tabindex="0">
+            <div class="summary2"> Reach out to us for:
+                <ul>
+                    <li>Immediate support for any technical issues affecting your gameplay.</li>
+                    <li>To share your feedback, which directly influences future updates and game selections.
+                    </li>
+                    <li> Our team is on standby to ensure your gaming experience is nothing short of legendary.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </main>
 {% endblock %}
