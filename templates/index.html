@@ -3,41 +3,39 @@
 {% block title %}Home - Gaming Hub{% endblock %}
 
 {% block content %}
+<header class="header">Home</header>
 <main class="main-content">
     <h1>Welcome to the Gaming Hub</h1>
     <p class="text-content"> to your ultimate gaming sanctuary! The Gaming Hub is designed to be your go-to
         destination for diving deep into the heart of gaming culture. Whether you're a retro enthusiast, a fan of the
         latest releases, or somewhere in between, you've found your haven.</p>
-        <div class="text-content">
+
+    <div class="grid-container">
+        <div class="grid-item">
             <h2>Discover Your Next Adventure</h2>
             <p>Explore my vast collection spanning several eras of video games. From the pixelated classics of the past
                 to the immersive experiences of the current generation, every gamer finds a treasure trove here. Our <a
-                    href="{{ url_for ('genres') }}">Genres</a> &amp; <a href="{{ url_for ('shop') }}">Shop</a> pages
-                have information on eras and notorious games of their times, ensuring you find
+                    href="{{ url_for ('genres') }}">Genres</a> &amp; <a href="{{ url_for ('shop') }}">shop</a> pages
+                have information on eras and notorious merch of their times, ensuring you find
                 your next obsession with ease.</p>
         </div>
-    <div class="section flex-container">
-        <img src="{{ url_for('static', filename='images/aboutus.jpeg') }}" alt="Our Journey" height="200px"
-            width="200px" class="side-image">
-        <div class="text-content">
+
+        <div class="grid-item">
             <h2>About</h2>
             <p>The Gaming Hub was born from a passion for gaming and a desire to showcase the advancement of graphics,
                 stories and imagination this beautiful industry has to offer. Our <a
                     href="{{ url_for ('about') }}">About</a> page tells the story of our journey, the inspiration
                 behind our creation, and our vision for the future of gaming.</p>
         </div>
-    </div>
 
-    <div class="section flex-container">
-        <div class="text-content">
+        <div class="grid-item">
             <h2>Join the Conversation</h2>
             <p>Have ideas, questions, or want to reach out? The <a href="{{ url_for ('contact') }}">Contact</a> page is
                 your gateway
                 to engaging with us and the broader Gaming Hub community. We're here to make your gaming experience
                 unforgettable.</p>
         </div>
-        <img src="{{ url_for('static', filename='images/mario1.avif') }}" alt="Contact Us" height="200px">
     </div>
-
 </main>
 {% endblock %}
+
