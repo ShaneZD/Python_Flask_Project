@@ -268,7 +268,7 @@ input[type="submit"]:hover {
 .text-box {
   background-color: #0063b2ff;
   border: 3px solid;
-  border-color: #f1ba0f;
+  border-color: #f2aa4cff;
   padding: 10px;
   cursor: pointer;
   position: relative;
@@ -279,7 +279,7 @@ input[type="submit"]:hover {
 .text-box1 {
   background-color: #0063b2ff;
   border: 3px solid;
-  border-color: #f1ba0f;
+  border-color: #f2aa4cff;
   padding: 10px;
   position: relative;
   height: 150px;
@@ -337,3 +337,15 @@ input[type="submit"]:hover {
     margin: 10px 0;
   }
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.grid-item {
+  border: 3px solid #f2aa4cff;
+  padding: 20px;
+}
+
