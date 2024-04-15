@@ -76,3 +76,23 @@ Inventory Management:
 
 The project includes a predefined inventory list containing instances of GameItem. This list populates the shop page and manages stock levels for purchases.
 Running the Application:
+
+Deployment Guide for The Gaming Hub
+
+Thank you for reviewing my Flask web application. Below are the steps to deploy it:
+
+Clone the Repository: Clone the GitHub repository containing the Flask web application code using the following command:
+
+
+
+git clone https://github.com/ShaneZD/Python_Flask_Project.git
+Navigate to the Project Directory: Change your current directory to the project directory:
+
+
+cd Python_Flask_Project
+Install Dependencies: Install the required Python packages by running:
+
+pip install -r requirements.txt
+Run the Flask App: Start the Flask application by running:
+
+run python app.py
