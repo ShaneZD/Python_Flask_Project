@@ -1,4 +1,5 @@
-.main-content {
+/* Styles for main content area */
+.main-content { 
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
@@ -10,7 +11,7 @@
   padding: 20px;
   padding-bottom: 50px;
 }
-
+/* Styles for the body */
 body {
   font-family: "Press Start 2P", cursive;
   background-color: rgb(255, 255, 255);
@@ -18,33 +19,33 @@ body {
   margin: 0;
   padding: 0;
 }
-
+/* Styles for dark mode */
 body.dark-mode {
   background-color: #121212;
   color: #f2aa4cff;
 }
-
+/* Styles for the header */
 header {
   background-color: #0063b2ff;
   color: #f2aa4cff;
   padding: 20px;
   text-align: center;
 }
-
+/* Styles for the navigation */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
 }
-
+/* Styles for navigation ul */
 nav ul {
   list-style-type: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
-
+/* Styles for navigation items */
 nav ul li {
   margin-right: 20px;
 }
@@ -52,17 +53,17 @@ nav ul li {
 nav ul li:last-child {
   margin-right: 0;
 }
-
+/* Styles for navigation links */
 nav ul li a {
   color: #f2aa4cff;
   text-decoration: none;
   padding: 10px;
 }
-
+/* Styles for theme toggle container */
 .theme-toggle-container {
   margin-left: auto;
 }
-
+/* Styles for theme toggle button + hover below */
 .theme-toggle-container button {
   background-color: #0063b2ff;
   color: #f2aa4cff;
@@ -85,7 +86,7 @@ footer {
   bottom: 0;
   width: 100%;
 }
-
+/* Styles for social media links */
 .social-media-links {
   display: flex;
   justify-content: center;
@@ -116,6 +117,7 @@ footer {
   transform: scale(1.1);
 }
 
+/* Styles for overlay */
 .overlay {
   position: absolute;
   top: 0;
@@ -164,12 +166,14 @@ footer {
 .genre-description h3 {
   margin-top: 0;
 }
+/* Media query for smaller screens (max-width: 1024px) */
 
 @media (max-width: 1024px) {
   .genres-grid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
+/* Media query for smaller screens (max-width: 768px) */
 
 @media (max-width: 768px) {
   .genres-grid {
@@ -180,6 +184,7 @@ footer {
     font-size: 1.2em;
   }
 }
+/* Media query for smaller screens (max-width: 480px) */
 
 @media (max-width: 480px) {
   .genres-grid {
@@ -212,6 +217,7 @@ textarea {
   border: 2px solid #0063b2ff;
   border-radius: 5px;
 }
+/* form input styles */
 
 input[type="submit"] {
   font-family: "Press Start 2P", cursive;
@@ -232,6 +238,7 @@ input[type="submit"]:hover {
   display: flex;
   justify-content: center;
 }
+/* text-content and grid styles */
 
 .text-content {
   display: grid;
@@ -326,6 +333,7 @@ input[type="submit"]:hover {
 .header {
   font-size: x-large;
 }
+/* Media query for Ul on 768px screens */
 
 @media only screen and (max-width: 768px) {
   nav ul {
