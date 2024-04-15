@@ -1,9 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
   const toggleButton = document.getElementById("theme-toggle");
+  const isDarkMode = localStorage.getItem("darkMode") === "true";
+  if (isDarkMode) {
+    document.body.classList.add("dark-mode");
+  }
+
   toggleButton.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
+    const isDarkModeNow = document.body.classList.contains("dark-mode");
+    localStorage.setItem("darkMode", isDarkModeNow);
   });
 });
+
 
 window.addEventListener("DOMContentLoaded", (event) => {
   let sliderIndex = 0;
