@@ -35,8 +35,7 @@ Concise Summaries: Provides succinct summaries of key topics, encouraging users 
 Social Media Links: Connects visitors with the Gaming Hub community and facilitates social sharing and interaction.
 Brand Promotion: Increases visibility and reach by leveraging popular social media platforms such as Facebook, Twitter, and Instagram. (links directly to home pages)
 5. Responsive Design
-Mobile Compatibility: Ensures seamless browsing experience across devices of varying screen sizes, including smartphones, tablets, and desktops.
-Adaptive Layout: Adjusts content layout and formatting dynamically to optimize readability and usability on different devices.
+This website is somewhat responsive, but with limited time due to focusing fully on implementing flask, i could not achieve what i had hoped for.
 
 Challenges Faced During Development
 1. Responsive Design Implementation
