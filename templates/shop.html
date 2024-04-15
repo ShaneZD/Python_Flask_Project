@@ -10,7 +10,7 @@
         <div class="image-container">
             <img src="{{ url_for('static', filename=item.image_url) }}" class="side-image" alt="{{ item.name }}">
             <div class="overlay">
-                <div class="text">{{ item.name }} - ${{ item.price }} - Stock: {{ item.stock }}</div>
+                <div class="text">{{ item.name }} - €{{ item.price }} - Stock: {{ item.stock }}</div>
             </div>
         </div>
         <div class="genre-description">
