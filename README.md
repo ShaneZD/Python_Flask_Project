@@ -50,3 +50,29 @@ Solution: Utilized Flask to store data in console.
 4. Deployment and Hosting
 Challenge: Deploying the Flask application to a production environment and ensuring reliable hosting presented deployment challenges.
 Solution: Followed best practices for server configuration, and monitored application performance.
+
+Project Overview:
+
+This project utilizes Flask, a Python web framework, to build a dynamic web store where users can browse and purchase items.
+
+Flask Routes:
+
+Homepage (/): Renders the index page where users land when they visit the site. It provides an introduction to the store.
+
+Shop (/shop): Displays the shop page listing all available items. The inventory data is passed to the template to dynamically generate item listings.
+
+Genres (/genres): Introduces users to different genres available in the store.
+
+About (/about): Provides information about the store and its mission.
+
+Purchase Items (/buy/int:item_id): Handles the purchase of items. When users attempt to buy an item, this route checks if the item is in stock. If available, it decrements the stock count and confirms the purchase; otherwise, it notifies the user that the item is out of stock.
+
+Contact Page (/contact): Displays a contact form where users can send messages. Upon form submission, the route captures the user's name, email, and message, printing it to the console for further action, and returns a thank you message to the user.
+
+Class Definition:
+
+A GameItem class is defined to represent each item in the store. It includes attributes like ID, name, price, stock, and image URL.
+Inventory Management:
+
+The project includes a predefined inventory list containing instances of GameItem. This list populates the shop page and manages stock levels for purchases.
+Running the Application:
